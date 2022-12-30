@@ -7,7 +7,7 @@
 .tasks__item {
    display: grid; 
    grid-template-columns: auto 1fr auto;
-   grid-gap: 10px;
+   grid-gap: 20px;
    align-items: center;
    padding: 10px;
    border-bottom: 1px solid #ddd;
@@ -34,11 +34,9 @@
 
 .tasks__content {
     font-weight: normal;
-    margin-left: 15px;
 }
 .tasks__content--done {
     text-decoration: line-through;
-    margin-left: 15px;
 }
 
 .tasks__button--remuve {
