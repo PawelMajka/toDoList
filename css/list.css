@@ -34,9 +34,11 @@
 
 .tasks__content {
     font-weight: normal;
+    word-break: break-word;
 }
 .tasks__content--done {
     text-decoration: line-through;
+    word-break: break-word;
 }
 
 .tasks__button--remuve {
