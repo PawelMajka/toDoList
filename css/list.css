@@ -13,12 +13,17 @@
    border-bottom: 1px solid #ddd;
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__button {
     width: 30px;
     height: 30px;
     padding: 0;
     border: none;
     color: white;
+    transition: background 0.3s;
 }
 
 .tasks__button--toggleDone {
