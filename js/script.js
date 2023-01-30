@@ -85,7 +85,7 @@
     const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttons");
 
-        if (!tasks.lenght) {
+        if (!tasks.length) {
             buttonsElement.innerHTML = "";
             return;
         }
@@ -106,12 +106,12 @@
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
         if (markAllDoneButton) {
-            markAllDoneButton.addEventListener(click, markAllTaskDone);
+            markAllDoneButton.addEventListener("click", markAllTaskDone);
         }
 
         const toogleHideDoneTasksButton = document.querySelector(".js-toogleHideDoneTasks");
         if (toogleHideDoneTasksButton) {
-            toogleHideDoneTasksButton.addEventListener(click, toogleHideDoneTasks);
+            toogleHideDoneTasksButton.addEventListener("click", toogleHideDoneTasks);
         }
     };
 
