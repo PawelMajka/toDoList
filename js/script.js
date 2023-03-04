@@ -41,7 +41,6 @@
     const toogleHideDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
         render();
-
     };
 
     const bindRemoveEvents = () => {  
@@ -65,16 +64,21 @@
     };
     const renderTasks = () => {
        const tasksToHTML = task => `
-            <li class="
-                tasks__item ${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-tasks">
-                <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-                   ${task.done ? "✔" : ""}
+            <li class="tasks__item ${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-tasks">
+                <button 
+                    class="tasks__button tasks__button--toggleDone js-toggleDone"
+                >
+                    ${task.done ? "✔" : ""}
                 </button>
-                <span ${task.done ? "class=tasks__content--done" : "class=tasks__content"}>
-                   ${task.content}
+                <span
+                    ${task.done ? "class=tasks__content--done" : "class=tasks__content"}
+                >
+                    ${task.content}
                 </span>
-                <button class="tasks__button tasks__button--remuve js-remove">
-                   🗑
+                <button 
+                    class="tasks__button tasks__button--remuve js-remove"
+                >
+                    🗑
                 </button>
             </li>
         `;
@@ -91,12 +95,15 @@
         }
 
         buttonsElement.innerHTML = `
-            <button class="buttons__button js-toogleHideDoneTasks">
-                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            <button
+                class="buttons__button js-toogleHideDoneTasks"
+                >
+                    ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="buttons__button js-markAllDone" 
-            ${tasks.every(({ done }) => done) ? "disabled" : ""}
-            >
+            <button 
+                class="buttons__button js-markAllDone" 
+                    ${tasks.every(({ done }) => done) ? "disabled" : ""}
+                >
                 Ukończ wszystkie
             </button>
         `;
