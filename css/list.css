@@ -29,9 +29,11 @@
 .tasks__button--toggleDone {
     background-color: hsl(120, 100%, 25%);
 }
+
 .tasks__button--toggleDone:hover {
     background-color: hsl(120, 100%, 35%);
 }
+
 .tasks__button--toggleDone:active {
     background-color: hsl(120, 100%, 45%); 
     border: 1px solid black;
@@ -41,6 +43,7 @@
     font-weight: normal;
     word-break: break-word;
 }
+
 .tasks__content--done {
     text-decoration: line-through;
     word-break: break-word;
@@ -49,9 +52,11 @@
 .tasks__button--remuve {
     background-color: hsl(0, 100%, 40%);
 }
+
 .tasks__button--remuve:hover {
     background-color: hsl(0, 100%, 50%);
 }
+
 .tasks__button--remuve:active {
     background-color: hsl(0, 100%, 70%);
     border: 1px solid black;
