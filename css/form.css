@@ -11,12 +11,12 @@
     }
 }
 
-.from__input {
+.form__input {
     padding: 10px;
     border: 1px solid #ddd;
 }
 
-.from__button {
+.form__button {
     padding: 10px;
     background-color: teal;
     color: white;
@@ -24,11 +24,11 @@
     transition: 0.5s;
 }
 
-.from__button:hover {
+.form__button:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.05);
 }
 
-.from__button:active {
+.form__button:active {
     background-color: hsl(180, 100%, 40%); 
 }
